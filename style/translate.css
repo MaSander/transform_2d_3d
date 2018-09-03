@@ -1,0 +1,25 @@
+.img2d{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    transform: translate(200px,200px);
+    /* transform: translateX(51px); */
+    /* transform: translateY(51px); */
+}
+
+/* .img{ */
+    /* transform: rotateX(50deg) */
+/* } */
+
+.img3d{
+    background-color: red;
+    position: relative;
+    transform: perspective(100px) translateZ(50px);
+    width: 200px;
+    height: 200px;
+    left: 970px;
+    /* transform: translateX(51px); */
+    /* transform: translateY(51px); */
+    /* transform: translateZ(51px); */
+
+}
