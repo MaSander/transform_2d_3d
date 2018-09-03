@@ -10,6 +10,9 @@
     transition: all 2000ms;
 }
 
+.ex1:not(:hover) {
+    transition: all 2000ms;
+}
 
 .ex2 {
     perspective: 150px;
@@ -17,6 +20,10 @@
 
 .ex2:hover {
     perspective: 800px;
+    transition: all 2000ms;
+}
+
+.ex2:not(:hover) {
     transition: all 2000ms;
 }
 
@@ -39,27 +46,27 @@
     line-height: 2em;
 }
 
-.front {
+.front-cube {
     transform: translateZ(1em);
 }
 
-.top {
+.top-cube {
     transform: rotateX(90deg) translateZ(1em);
 }
 
-.right {
+.right-cube {
     transform: rotateY(90deg) translateZ(1em);
 }
 
-.left {
+.left-cube {
     transform: rotateY(-90deg) translateZ(1em);
 }
 
-.bottom {
+.bottom-cube {
     transform: rotateX(-90deg) translateZ(1em);
 }
 
-.back {
+.back-cube {
     transform: rotateY(-180deg) translateZ(1em);
 }
 
