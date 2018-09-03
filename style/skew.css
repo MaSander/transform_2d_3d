@@ -1,0 +1,22 @@
+.part-skw {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-skw {
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bt-dgn-skw {
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    transform: skewX(-40deg);
+}
