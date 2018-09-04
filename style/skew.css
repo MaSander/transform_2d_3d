@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .part-skw {
     padding-top: 50px;
     display: flex;
@@ -6,17 +10,122 @@
     align-items: center;
 }
 
-.bt-skw {
-    background-color: red;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: flex-start;
+.part-skw h3 {
+    text-align: center;
 }
 
-.bt-dgn-skw {
-    background-color: blue;
+/* explicaçao skew */
+
+.exp-skw-xy {
+    display: flex;
+    flex-direction: row;
+}
+
+/* skew y */
+
+.skw--exp {
+    padding: 0px 75px;
+}
+
+.fnd-skw-y {
+    color: white;
+    background-color: rgb(250, 3, 3);
+    width: 200px;
+    height: 200px;
+}
+
+.frt-skw-y {
+    color: white;
+    background-color: rgba(13, 0, 128, 0.486);
+    width: 200px;
+    height: 200px;
+    transform: skewY(-30deg);
+}
+
+/* skew x */
+.fnd-skw-x {
+    color: white;
+    background-color: rgb(250, 3, 3);
+    width: 200px;
+    height: 200px;
+}
+
+.frt-skw-x {
+    color: white;
+    background-color: rgba(13, 0, 128, 0.486);
+    width: 200px;
+    height: 200px;
+    transform: skewx(-30deg);
+}
+
+/* skew x e y */
+
+.fnd-skw-xy {
+    color: white;
+    background-color: rgb(250, 3, 3);
+    width: 200px;
+    height: 200px;
+}
+
+.frt-skw-xy {
+    color: white;
+    background-color: rgba(13, 0, 128, 0.486);
+    width: 200px;
+    height: 200px;
+    transform: skew(30deg, -20deg);
+}
+
+/* exemplo com imagem */
+
+    .skw-img {
+        margin-top: 200px;
+    }
+
+    .skw-img-n {
+        margin-top: 40px;
+        margin-right: 100px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .skw-img-xy {
+        width: 300px;
+        height: 250px;
+        transform: skew(20deg, -30deg);
+    }
+
+/* começo da barra */
+
+.exp-skw-brr {
+    margin-top: 200px;
+}
+
+.brr-skw {
+    border-radius: 10px;
+    border: solid black;
+    height: 52px;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+}
+
+.brr-fnd-skw {
+    border-radius: 5px;
+    background-color: red;
     width: 100px;
-    height: 50px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 98;
+}
+
+.brr-dgn-skw {
+    background-color: red;
+    width: 75px;
+    height: 100%;
+    right: 75px;
     transform: skewX(-40deg);
+    position: absolute;
+    z-index: 97;
 }
