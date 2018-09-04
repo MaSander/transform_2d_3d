@@ -1,0 +1,49 @@
+#rotate {
+    perspective: 800px;
+    background-color: #082879;
+  }
+
+.title{
+  font-size: 4em;
+  color: darkred;
+  text-align: center;
+}
+  
+.content{
+    display: flex;
+    margin-left: 12em;    
+    margin-top: 3em;
+}
+.cl{
+    transform: rotateY(0deg);
+}
+.cm{
+    transform: translateZ(0px);
+}
+.cr{
+    transform: rotateY(0deg);
+}
+.cl:hover{
+    transform: rotateY(36deg);
+    transition: transform 0.3s;
+}
+.cm:hover{
+    transition: transform 0.3s;
+    transform: translateZ(-90px);
+}
+.cr:hover{
+    transition: transform 0.3s;
+    transform: rotateY(-36deg);
+}
+
+#rotate a {
+    color: white;
+    font-size: 2em;
+
+    text-decoration: none;
+}
+
+#rotate a:hover {
+    background-color: red;
+    border-radius: 3px;
+}
